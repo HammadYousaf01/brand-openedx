@@ -1,0 +1,10 @@
+#root {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: orange !important;
+}
+
+.theme-toggle-button {
+  background-color: yellow !important;
+}

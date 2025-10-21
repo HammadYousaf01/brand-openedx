@@ -1,0 +1,1 @@
+{"version":3,"sources":["core.css"],"names":[],"mappings":"AAAA,MACE,iBAAkB,CAClB,SAAU,CACV,UAAW,CACX,kCACF,CAEA,qBACE,kCACF","file":"core.css","sourcesContent":["#root {\n  position: relative;\n  z-index: 1;\n  width: 100%;\n  background-color: orange !important;\n}\n\n.theme-toggle-button {\n  background-color: yellow !important;\n}"]}
