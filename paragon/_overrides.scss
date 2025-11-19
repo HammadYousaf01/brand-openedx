@@ -1,5 +1,4 @@
 $logo-light: "http://local.openedx.io:8000/static/indigo/images/logo.png";
-$logo-dark: "http://local.openedx.io:8000/static/indigo/images/logo-white.png";
 
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
@@ -374,21 +373,7 @@ html {
 .themed-logo {
   width: 160px;
   height: 40px;
-  position: relative;
   background: no-repeat center/contain url(#{$logo-light});
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(#{$logo-dark});
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 180ms linear;
-  }
 }
 
 // style sheet component
