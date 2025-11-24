@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-$primary: #AEC7F6;
-$danger: #FFA07A;
-$success: #54CF5E;
-$body-bg:#0D0D0E;
+$primary: #13497d;
+$danger: #ffa07a;
+$success: #54cf5e;
+$body-bg: #0d0d0e;
 $brand: #ce80aa;
 
-$primary-light: #292A2C;
+$primary-light: #292a2c;
 $light-dark: #374151;
-$text-color: #F8F8F8;
-$text-color-primary: #DDDFE2;
+$text-color: #f8f8f8;
+$text-color-primary: #dddfe2;
 $border-color: #777792;
-$light-overlay: #36383B;
-$btn-color: #112F6B;
+$light-overlay: #36383b;
+$btn-color: #ffffff;
 $hover-color: #383938;
 
 $theme-colors-dark: () !default;
 $theme-colors-dark: map-merge(
   (
-    "primary":    $primary,
-    "success":    $success,
-    "danger":     $danger,
+    "primary": $primary,
+    "success": $success,
+    "danger": $danger,
   ),
   $theme-colors-dark
 );
@@ -35,7 +35,6 @@ $primary-700: mix(black, $primary, 20%);
 $primary-800: mix(black, $primary, 25%);
 $primary-900: mix(black, $primary, 30%);
 
-
 $brand-100: mix(black, $brand, 30%) !default;
 $brand-200: mix(black, $brand, 25%) !default;
 $brand-300: mix(black, $brand, 20%) !default;
@@ -45,7 +44,6 @@ $brand-700: mix(white, $brand, 50%) !default;
 $brand-600: mix(white, $brand, 25%) !default;
 $brand-800: mix(white, $brand, 75%) !default;
 $brand-900: mix(white, $brand, 94%) !default;
-
 
 $success-100: mix(white, $success, 94%);
 $success-200: mix(white, $success, 75%);
@@ -102,25 +100,32 @@ $theme-color-levels-dark: map-merge(
   $theme-color-levels-dark
 );
 
-$link-color:                              $primary-500;
-$link-hover-color:                        darken($link-color, 15%)s;
+$link-color: $primary-500;
+$link-hover-color: darken($link-color, 15%) s;
 
-$muted-link-color:                              $primary-500;
-$muted-inline-link-color:                       $primary-500;
-$muted-link-hover-color:                        darken($muted-link-color, 15%);
-$muted-inline-link-decoration-color:            rgba($muted-inline-link-color, .3);
-$muted-inline-link-hover-color:                 darken($muted-inline-link-color, 15%);
+$muted-link-color: $primary-500;
+$muted-inline-link-color: $primary-500;
+$muted-link-hover-color: darken($muted-link-color, 15%);
+$muted-inline-link-decoration-color: rgba($muted-inline-link-color, 0.3);
+$muted-inline-link-hover-color: darken($muted-inline-link-color, 15%);
 
-$component-active-bg:       $primary;
+$component-active-bg: $primary;
 
-$custom-control-indicator-checked-color:        $component-active-bg;
-$custom-control-indicator-checked-bg:           $component-active-bg;
+$custom-control-indicator-checked-color: $component-active-bg;
+$custom-control-indicator-checked-bg: $component-active-bg;
 
-$custom-checkbox-indicator-icon-checked:        str-replace(url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z' fill='#{$custom-control-indicator-checked-color}'/></svg>"), "#", "%23");
-$custom-radio-indicator-icon-checked:           str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='#{$custom-control-indicator-checked-bg}'/%3e%3c/svg%3e"), "#", "%23") ;
+$custom-checkbox-indicator-icon-checked: str-replace(
+  url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M21 3H3V21H21V3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z' fill='#{$custom-control-indicator-checked-color}'/></svg>"),
+  "#",
+  "%23"
+);
+$custom-radio-indicator-icon-checked: str-replace(
+  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='#{$custom-control-indicator-checked-bg}'/%3e%3c/svg%3e"),
+  "#",
+  "%23"
+);
 
-
-$input-focus-border-color:    $component-active-bg;
-$input-btn-focus-color:       $component-active-bg;
-$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
-$input-focus-box-shadow:      $input-btn-focus-box-shadow;
+$input-focus-border-color: $component-active-bg;
+$input-btn-focus-color: $component-active-bg;
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
+$input-focus-box-shadow: $input-btn-focus-box-shadow;
