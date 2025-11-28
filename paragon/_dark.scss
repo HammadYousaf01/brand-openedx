@@ -1,5 +1,3 @@
-$logo-dark: "http://local.openedx.io:8000/static/indigo/images/logo-white.png";
-
 body.indigo-dark-theme {
   @import "../themes/dark/variables";
 
@@ -21,8 +19,4 @@ body.indigo-dark-theme {
   * {
     accent-color: $primary;
   }
-}
-
-body.indigo-dark-theme .themed-logo {
-  background-image: url(#{$logo-dark});
 }
